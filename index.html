@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <title>RezLive | Brochure Library</title>
-  <meta name="description" content="Explore the latest RezLive brochures for Rail, Car Rental, Cruise, Global services and RezTez.">
+  <title>RezLive.com | Brochure Library</title>
+  <meta name="description" content="Explore RezLive.com brochures for Rail, Car Rental, Cruise, Global services and RezTez.">
   <style>
     :root{
       --bg:#ffffff;
       --surface:#f7f8fa;
-      --surface-2:#fbfbfc;
       --text:#172033;
       --muted:#667085;
       --border:#e6e8ec;
@@ -29,7 +28,7 @@
       -webkit-font-smoothing:antialiased;
     }
     a{text-decoration:none;color:inherit}
-    button,input{font:inherit}
+    button{font:inherit}
     .wrap{width:min(1080px,calc(100% - 32px));margin:auto}
 
     header{
@@ -48,7 +47,7 @@
       gap:18px;
     }
     .logo{display:block;width:150px;max-width:42vw;height:auto}
-    .year{
+    .library-label{
       color:#7a8292;
       font-size:12px;
       font-weight:700;
@@ -56,7 +55,7 @@
       white-space:nowrap;
     }
 
-    .hero{padding:42px 0 24px}
+    .hero{padding:48px 0 30px}
     .eyebrow{
       display:inline-flex;
       align-items:center;
@@ -89,29 +88,6 @@
       font-size:15px;
       line-height:1.7;
     }
-
-    .toolbar{
-      margin:26px 0 20px;
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-    .search{
-      width:100%;
-      display:flex;
-      align-items:center;
-      gap:10px;
-      padding:0 14px;
-      min-height:46px;
-      border:1px solid var(--border);
-      border-radius:13px;
-      background:#fff;
-      transition:border-color .2s,box-shadow .2s;
-    }
-    .search:focus-within{border-color:#b6dce9;box-shadow:0 0 0 4px rgba(31,159,200,.08)}
-    .search svg{width:18px;height:18px;color:#98a2b3;flex:0 0 auto}
-    .search input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font-size:14px}
-    .search input::placeholder{color:#98a2b3}
 
     .grid{display:grid;grid-template-columns:1fr;gap:14px;padding-bottom:56px}
     .card{
@@ -154,36 +130,22 @@
     }
     .card h2{margin:18px 0 7px;font-size:21px;line-height:1.22;letter-spacing:-.025em}
     .desc{margin:0;color:var(--muted);font-size:13.5px;line-height:1.58}
-    .actions{display:flex;gap:10px;margin-top:20px}
+    .actions{display:flex;margin-top:20px}
     .btn{
+      width:100%;
       min-height:44px;
       border-radius:12px;
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      gap:7px;
       padding:10px 14px;
       font-size:13px;
       font-weight:750;
       cursor:pointer;
       transition:all .18s ease;
     }
-    .primary{flex:1;border:1px solid var(--text);background:var(--text);color:#fff}
+    .primary{border:1px solid var(--text);background:var(--text);color:#fff}
     .primary:hover{background:#273247}
-    .secondary{border:1px solid var(--border);background:#fff;color:#344054;min-width:44px}
-    .secondary:hover{background:var(--surface)}
-    .empty{display:none;text-align:center;color:var(--muted);padding:20px 0 60px;font-size:14px}
-
-    .info{
-      margin:4px 0 34px;
-      padding:16px;
-      border-radius:14px;
-      border:1px solid #f1e3d1;
-      background:#fffaf4;
-      color:#73511f;
-      font-size:12px;
-      line-height:1.55;
-    }
 
     footer{border-top:1px solid var(--border);padding:24px 0 32px;color:#8a94a6;text-align:center;font-size:12px}
 
@@ -202,18 +164,15 @@
     .viewer-title{font-size:14px;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     .close{border:1px solid var(--border);background:#fff;color:#344054;border-radius:10px;padding:8px 11px;font-weight:700;cursor:pointer}
     iframe{width:100%;height:calc(100% - 60px);border:0;background:#fff}
-    .mobile-note{display:none}
 
     @media(max-width:680px){
       dialog{display:none!important}
-      .mobile-note{display:block;margin-top:8px;color:#98a2b3;font-size:11px}
       .hero{padding-top:34px}
       .card{padding:18px}
     }
     @media(min-width:720px){
       .wrap{width:min(1080px,calc(100% - 48px))}
-      .hero{padding:64px 0 28px}
-      .toolbar{max-width:420px}
+      .hero{padding:64px 0 34px}
       .grid{grid-template-columns:repeat(2,1fr);gap:18px}
       .card{padding:22px}
     }
@@ -228,27 +187,18 @@
       <a href="https://www.rezlive.com/" target="_blank" rel="noopener" aria-label="RezLive.com">
         <img class="logo" src="https://rezlive8.b-cdn.net/2026/broucher/Rez%20logo.png" alt="RezLive.com">
       </a>
-      <div class="year">BROCHURE LIBRARY · 2026</div>
+      <div class="library-label">BROCHURE LIBRARY</div>
     </div>
   </header>
 
   <main class="wrap">
     <section class="hero">
-      <div class="eyebrow">Digital Brochures</div>
-      <h1>Everything you need to know about RezLive.</h1>
-      <p class="lead">Explore our latest brochures for Rail, Car Rental, Cruise, RezTez and RezLive’s global travel distribution platform.</p>
-      <div class="toolbar">
-        <label class="search" aria-label="Search brochures">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
-          <input id="search" type="search" placeholder="Search brochures" autocomplete="off">
-        </label>
-      </div>
+      <div class="eyebrow">RezLive.com</div>
+      <h1>Digital Brochure</h1>
+      <p class="lead">Explore brochures for Rail, Car Rental, Cruise, RezTez and the RezLive.com global travel distribution platform.</p>
     </section>
 
     <section class="grid" id="grid" aria-live="polite"></section>
-    <div class="empty" id="empty">No brochures match your search.</div>
-
-    <div class="info">Tip: On mobile devices, brochures open in your phone's native PDF viewer for the best reading experience.</div>
   </main>
 
   <footer><div class="wrap">RezLive.com · Award Winning Global Reservation System</div></footer>
@@ -258,7 +208,7 @@
       <div class="viewer-title" id="viewerTitle">Brochure</div>
       <button class="close" onclick="closeViewer()">Close</button>
     </div>
-    <iframe id="frame" title="RezLive brochure viewer"></iframe>
+    <iframe id="frame" title="RezLive.com brochure viewer"></iframe>
   </dialog>
 
   <script>
@@ -266,19 +216,19 @@
       {
         title:'ALL Rail',
         tag:'Rail',
-        desc:'Explore RezLive rail products and solutions in one concise brochure.',
+        desc:'Explore RezLive.com rail products and solutions in one concise brochure.',
         url:'https://rezlive8.b-cdn.net/2026/broucher/ALL%20Rail.pdf'
       },
       {
         title:'Car Rental & Cruise',
         tag:'Car Rental · Cruise',
-        desc:'Discover RezLive car rental and cruise solutions for a broader travel portfolio.',
+        desc:'Discover RezLive.com car rental and cruise solutions for a broader travel portfolio.',
         url:'https://rezlive8.b-cdn.net/2026/broucher/Car%20Rental%20%26%20Cruise%20final%20%281%29.pdf'
       },
       {
         title:'Car Rental & Rail',
         tag:'Car Rental · Rail',
-        desc:'A combined overview of RezLive car rental and rail solutions.',
+        desc:'A combined overview of RezLive.com car rental and rail solutions.',
         url:'https://rezlive8.b-cdn.net/2026/broucher/Car%20Rental%20%26%20Rail%20final.pdf'
       },
       {
@@ -290,38 +240,27 @@
       {
         title:'RezTez Flyer',
         tag:'RezTez',
-        desc:'An introduction to RezTez and the value it brings to travel partners.',
+        desc:'An introduction to RezTez and the value it brings to RezLive.com travel partners.',
         url:'https://rezlive8.b-cdn.net/2026/broucher/RezTez%20Flyer%20final.pdf'
       }
     ];
 
     const grid = document.getElementById('grid');
-    const search = document.getElementById('search');
-    const empty = document.getElementById('empty');
 
     function render(){
-      const q = search.value.trim().toLowerCase();
-      const items = brochures.map((b,i)=>({...b,i})).filter(b =>
-        !q || (b.title+' '+b.tag+' '+b.desc).toLowerCase().includes(q)
-      );
-
-      grid.innerHTML = items.map((b,n)=>`
+      grid.innerHTML = brochures.map((b,i)=>`
         <article class="card">
           <div class="card-head">
-            <div class="index">${String(b.i+1).padStart(2,'0')}</div>
+            <div class="index">${String(i+1).padStart(2,'0')}</div>
             <span class="tag">${b.tag}</span>
           </div>
           <h2>${b.title}</h2>
           <p class="desc">${b.desc}</p>
-          <div class="mobile-note">Opens in your device PDF viewer.</div>
           <div class="actions">
-            <button class="btn primary" onclick="openBrochure(${b.i})">View brochure</button>
-            <a class="btn secondary" href="${b.url}" target="_blank" rel="noopener" aria-label="Open ${b.title} in a new tab">↗</a>
+            <button class="btn primary" onclick="openBrochure(${i})">View Brochure</button>
           </div>
         </article>
       `).join('');
-
-      empty.style.display = items.length ? 'none' : 'block';
     }
 
     function openBrochure(i){
@@ -343,7 +282,6 @@
     document.getElementById('viewer').addEventListener('click',e=>{
       if(e.target.id==='viewer') closeViewer();
     });
-    search.addEventListener('input',render);
     render();
   </script>
 </body>
